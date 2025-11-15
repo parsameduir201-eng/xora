@@ -1,7 +1,6 @@
 import { Element } from "react-scroll";
 import { useState } from "react";
 import clsx from "clsx";
-import CountUp from "react-countup";
 import { plans } from "../constants/index.jsx";
 import Button from "../components/Button.jsx";
 
@@ -106,14 +105,7 @@ const Pricing = () => {
                         index === 1 ? "text-p3" : "text-p4",
                       )}
                     >
-                      ${" "}
-                      <CountUp
-                        start={plan.priceMonthly}
-                        end={monthly ? plan.priceMonthly : plan.priceYearly}
-                        duration={0.4}
-                        useEasing={false}
-                        preserveValue
-                      />
+                    
                     </div>
                     <div className="small-1 relative top-3 ml-1 uppercase">
                       / mo
